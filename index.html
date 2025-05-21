@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio - Ana Maria Amorim</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /*body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }*/
+      body {
+        background-color: #f4f0ea;
+        color: #798252;
+        font-family: "Cabin", sans-serif;
+        font-weight: 400;
+      }
+
+      /* header {
+        /*background-color: #4a90e2;*/
+      /* background-color: rgb(210, 219, 217);
+        /*color: white;*/
+      /* color: rgb(121, 130, 82);
+        padding: 20px 10px;
+        text-align: center;
+      }*/
+
+      /*header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      header p {
+        margin: 5px 0 0;
+        font-size: 1.2em;
+        font-style: italic;
+      }*/
+
+      header {
+        background-color: #d2dbd9;
+        padding: 2rem;
+      }
+
+      .header-flex {
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        gap: 20px; /* Espaço entre a imagem e o texto */
+      }
+
+      .texto-header {
+        text-align: left;
+      }
+
+      /* main {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 0 15px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+      }
+      section {
+        margin-bottom: 40px;
+      }*/
+      main {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      section h2 {
+        /*  border-bottom: 2px solid #4a90e2;*/
+        border-bottom: 2px solid rgb(121, 130, 82);
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+      }
+      section a {
+        color: #0e8c2d;
+      }
+      .project {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      .project h3 {
+        margin: 0 0 5px;
+        /*color: #4a90e2;*/
+        color: rgb(121, 130, 82);
+      }
+      .project p {
+        margin: 3px 0;
+      }
+      .contact a {
+        /*color: #4a90e2;*/
+        color: rgb(27, 118, 74);
+        text-decoration: none;
+        margin-right: 15px;
+      }
+      .contact a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        text-align: center;
+        padding: 15px 10px;
+        font-size: 0.9em;
+        color: #777;
+        border-top: 1px solid #ddd;
+        margin-top: 40px;
+      }
+      .foto-perfil {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; /* Foto redonda */
+        object-fit: cover; /* Corta a imagem para caber certinho */
+      }
+      .texto-header {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!--<header>
+      <img src="FotoAnaMaria.jpg" alt="Minha foto" class="foto-perfil" />
+      <div>
+        <h1>Ana Maria Paranhos de Amorim</h1>
+        <p>Doutora em Ciência da Computação | Desenvolvedora Front-End</p>
+      </div>
+    </header>-->
+    <header class="header-flex">
+      <img src="FotoAnaMaria.jpg" alt="Minha foto" class="foto-perfil" />
+      <div class="texto-header">
+        <h1>Ana Maria Paranhos de Amorim</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou Doutora em Ciência da Computação pela Universidade Federal da
+          Bahia (UFBA), Mestra em Sistemas e Computação pela UNIFACS,
+          Especializada em Sistemas Distribuídos pela UFBA e Graduada em
+          <abbr
+            title="Em 1982, o nome do curso era Processamento de Dados, atualmente é Ciência da Computação."
+            style="cursor: pointer"
+          >
+            Processamento de Dados
+          </abbr>
+          pela UFBA.
+        </p>
+        <p>
+          Integrante do grupo CEManTIKA de pesquisa em Sistemas Colaborativos,
+          Ubíquos e Sensíveis ao Contexto. Atuei como membro do projeto RESCUER,
+          uma solução Crowdsourcing para gerenciamento de crises e emergências,
+          financiado pela Comissão Europeia e CNPq/MCTI, desenvolvido em
+          parceria Brasil/União Europeia.
+        </p>
+        <p>
+          Atualmente (2025) sou pesquisadora bolsista do Instituto Nacional de
+          Pesquisas Espaciais (INPE). Atuo na área de Computação desde 1980.
+          Meus interesses em pesquisa incluem: Crowdsourcing, Engenharia de
+          Software, Objetos Móveis, Sistemas Colaborativos e Sistemas de Gestão
+          de Crises e Emergências.
+        </p>
+        <p>
+          Estou focada na área de pesquisa e em desenvolvimento Front-End,
+          utilizando HTML, CSS, JavaScript e React para criação de interfaces
+          modernas e responsivas.
+        </p>
+      </section>
+      <section id="projetos">
+        <h2>Projetos</h2>
+
+        <div class="project">
+          <h3>Projeto 1 - Portfolio Pessoal</h3>
+          <p>
+            Site pessoal criado com HTML, CSS e JavaScript para mostrar meus
+            projetos e informações profissionais.
+          </p>
+          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+          <p>
+            <a href="https://github.com/seu-usuario/portfolio" target="_blank"
+              >Ver código no GitHub</a
+            >
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Projeto 2 - To-do List</h3>
+          <p>Aplicação simples para gerenciar tarefas.</p>
+          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+          <p>
+            <a href="https://seu-usuario.github.io/todo-react" target="_blank"
+              >Ver projeto online</a
+            >
+          </p>
+        </div>
+
+        <!-- Você pode copiar e colar este bloco para adicionar mais projetos -->
+      </section>
+      <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <p>📧 <a href="mailto:ctamp2000@gmail.com">ctamp2000@gmail.com</a></p>
+        <p>
+          🔗
+          <a
+            href="https://www.linkedin.com/in/anamariacemantika"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+        <p>
+          🐙 <a href="https://github.com/ctamp2000" target="_blank">GitHub</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
