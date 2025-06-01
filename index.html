@@ -134,7 +134,9 @@
   </head>
   <body>
     <div style="text-align: right; padding: 10px">
-      <button onclick="setLanguage('pt')">🇧🇷 Português</button>
+      <button onclick="setLanguage('pt')" style="margin-right: 10px">
+        🇧🇷 Português
+      </button>
       <button onclick="setLanguage('en')">🇺🇸 English</button>
     </div>
 
@@ -147,109 +149,42 @@
 
     <main>
       <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>
-          Sou Doutora em Ciência da Computação pela Universidade Federal da
-          Bahia (UFBA), Mestra em Sistemas e Computação pela UNIFACS,
-          Especializada em Sistemas Distribuídos pela UFBA e Graduada em
-          <abbr
-            title="Em 1982, o nome do curso era Processamento de Dados, atualmente é Ciência da Computação."
-            style="cursor: pointer"
-          >
-            Processamento de Dados
-          </abbr>
-          pela UFBA.
-        </p>
-        <p>
-          Integrante do grupo CEManTIKA de pesquisa em Sistemas Colaborativos,
-          Ubíquos e Sensíveis ao Contexto. Atuei como membro do projeto RESCUER,
-          uma solução Crowdsourcing para gerenciamento de crises e emergências,
-          financiado pela Comissão Europeia e CNPq/MCTI, desenvolvido em
-          parceria Brasil/União Europeia.
-        </p>
-        <p>
-          Atualmente (2025) sou pesquisadora bolsista do Instituto Nacional de
-          Pesquisas Espaciais (INPE). Atuo na área de Computação desde 1980.
-          Meus interesses em pesquisa incluem: Crowdsourcing, Engenharia de
-          Software, Objetos Móveis, Sistemas Colaborativos e Sistemas de Gestão
-          de Crises e Emergências.
-        </p>
-        <p>
-          Estou focada na área de pesquisa e em desenvolvimento Front-End,
-          utilizando HTML, CSS, JavaScript e React para criação de interfaces
-          modernas e responsivas.
-        </p>
+        <h2 data-i18n="about-title"></h2>
+        <p data-i18n="about-1"></p>
+        <p data-i18n="about-2"></p>
+        <p data-i18n="about-3"></p>
+        <p data-i18n="about-4"></p>
       </section>
       <section id="projetos">
-        <h2>Projetos</h2>
+        <h2 data-i18n="projects-title"></h2>
 
         <div class="project">
-          <h3>Projeto 1 - Portfolio Pessoal</h3>
-          <p>
-            Site pessoal criado para mostrar meus projetos e informações
-            profissionais.
-          </p>
-          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-          <p>
-            <a
-              href="https://github.com/ctamp2000/ctamp2000.github.io.git"
-              target="_blank"
-              >Ver código do projeto</a
-            >
-          </p>
+          <h3 data-i18n="project1-title"></h3>
+          <p data-i18n="project1-desc"></p>
+          <p data-i18n="project1-tech"></p>
+          <p data-i18n="project1-cod"></p>
         </div>
 
         <div class="project">
-          <h3>Projeto 2 - Lista de Tarefas</h3>
-          <p>Aplicação simples para gerenciar tarefas.</p>
-          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-          <p>
-            <a href="https://tarefas-javascript.vercel.app/" target="_blank"
-              >Ver projeto online</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://github.com/ctamp2000/tarefas-javascript"
-              target="_blank"
-              >Ver código do projeto</a
-            >
-          </p>
+          <h3 data-i18n="project2-title"></h3>
+          <p data-i18n="project2-desc"></p>
+          <p data-i18n="project2-tech"></p>
+          <p data-i18n="project2-oln"></p>
+          <p data-i18n="project2-cod"></p>
         </div>
 
         <div class="project">
-          <h3>Projeto 3 - Cadastro de Usuários</h3>
-          <p>
-            Projeto full stack - frontend, backend e banco de dados funcionando
-            em conjunto.
-          </p>
-          <p>
-            <strong>Tecnologias:</strong> BD: MongoDB; Backend: Node.js +
-            MongoDB; Frontend: React
-          </p>
-          <p>
-            <a href="https://cadastro-usuario-orcin.vercel.app/" target="_blank"
-              >Ver projeto online</a
-            >
-          </p>
-          <p>
-            <a href="https://github.com/ctamp2000/meu-backend" target="_blank"
-              >Ver código do projeto (backend)</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://github.com/ctamp2000/cadastro-usuario"
-              target="_blank"
-              >Ver código do projeto (froontend)</a
-            >
-          </p>
+          <h3 data-i18n="project3-title"></h3>
+          <p data-i18n="project3-desc"></p>
+          <p data-i18n="project3-tech"></p>
+          <p data-i18n="project3-oln"></p>
+          <p data-i18n="project3-cod1"></p>
+          <p data-i18n="project3-cod2"></p>
         </div>
-
-        <!-- Você pode copiar e colar este bloco para adicionar mais projetos -->
       </section>
       <section id="contato" class="contact">
-        <h2>Contato</h2>
+        <h2 data-i18n="contact-title"></h2>
+
         <p>📧 <a href="mailto:ctamp2000@gmail.com">ctamp2000@gmail.com</a></p>
         <p>
           🔗
@@ -265,7 +200,7 @@
       </section>
     </main>
     <footer>
-      <p>© 2025 Seu Nome. Todos os direitos reservados.</p>
+      <p data-i18n="footer"></p>
     </footer>
   </body>
 </html>
