@@ -133,6 +133,11 @@
     </style>
   </head>
   <body>
+    <div style="text-align: right; padding: 10px">
+      <button onclick="setLanguage('pt')">🇧🇷 Português</button>
+      <button onclick="setLanguage('en')">🇺🇸 English</button>
+    </div>
+
     <header class="header-flex">
       <img src="FotoAnaMaria.jpg" alt="Minha foto" class="foto-perfil" />
       <div class="texto-header">
@@ -264,3 +269,22 @@
     </footer>
   </body>
 </html>
+<script>
+  async function setLanguage(lang) {
+    const response = await fetch(`lang/${lang}.json`);
+    const translations = await response.json();
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[key]) {
+        el.innerHTML = translations[key];
+      }
+    });
+    localStorage.setItem("lang", lang);
+  }
+
+  // Carrega o idioma salvo ou padrão (pt)
+  document.addEventListener("DOMContentLoaded", () => {
+    const lang = localStorage.getItem("lang") || "pt";
+    setLanguage(lang);
+  });
+</script>
