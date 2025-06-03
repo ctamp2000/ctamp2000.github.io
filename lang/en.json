@@ -19,7 +19,7 @@
   "project3-desc": "Full stack project - frontend, backend and database.",
   "project3-tech": "<p><strong>Technologies:</strong> BD: MongoDB; Backend: Node.js + MongoDB; Frontend: React</p>",
   "project3-oln": "<p><a href=\"https://cadastro-usuario-orcin.vercel.app\" target=\"_blank\">View project online</a></p>",
-  "project3-cod1": "<p><a href=\"https://github.com/ctamp2000/meu-backend\" target=\"_blank\">Ver código do projeto (backend)</a></p>",
+  "project3-cod1": "<p><a href=\"https://github.com/ctamp2000/meu-backend\" target=\"_blank\">View project code (backend)</a></p>",
   "project3-cod2": "<p><a href=\"https://github.com/ctamp2000/cadastro-usuario\" target=\"_blank\">View project code (froontend)</a></p>",
   "contact-title": "Contact",
   "email": "Email",
